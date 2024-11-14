@@ -7,7 +7,11 @@
             CreateTables.sql
             InsertData.sql
     /Models
+        LabTest.cs
     /Controllers
+        LabTestController.cs
+    /Client
+        insert_labtest.py
     /Views
     /wwwroot
     appsettings.json
