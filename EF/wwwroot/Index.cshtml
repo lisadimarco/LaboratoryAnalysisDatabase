@@ -1,0 +1,22 @@
+@model IEnumerable<LabTest>
+
+<h1>Test di Laboratorio</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Nome Test</th>
+            <th>Minimo Riferimento</th>
+            <th>Massimo Riferimento</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var test in Model)
+        {
+            <tr>
+                <td>@test.TestName</td>
+                <td>@test.ReferenceMin</td>
+                <td>@test.ReferenceMax</td>
+            </tr>
+        }
+    </tbody>
+</table>
